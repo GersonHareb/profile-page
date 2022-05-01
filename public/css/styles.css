@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #f0f7f7 0%, #deeeee 100%);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#header {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#header,
+nav, .partial {
+  border: 1px solid rgb(199, 211, 219);
+}
+
+nav {
+  background-color: white;
+}
+
+.nav-wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.nav-item{
+  width: 80px;
+  max-width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.nav-item i {
+  font-size: 24px;
+  color: rgb(92, 92, 92);
+}
+
+.nav-item a {
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(90, 90, 90);
+  font-size: 12px;
+}
+
+.end-body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: rgb(90, 90, 90);
+  font-size: 12px;
+}
+
+.navPicture{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+
+#logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 3px;
+  background-color: rgb(4, 100, 189);
+  color: white;
+  padding: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.5em;
+}
+
+#banner {
+  width: 100%;
+  max-height: 210px;
+  object-fit: cover;
+}
+
+.main-row{
+  flex: 2;
+}
+
+.side-row{
+  flex: 1;
+}
+
+.card-body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card{
+  overflow: hidden!important;
+  border-radius: 10px;
+}
+
+.uploadButton {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-color: #f6f8fc;
+  top: 12;
+  right: 11;
+  border: none;
+  color: rgb(4, 100, 189);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  /* padding-left: 1px; */
+}
+
+.userPicture {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  padding: 4px;
+  background-color: white;
+}
+
+#random {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.random-body {
+  margin-top: -140px;
+}
+
+.random-body h1,
+h6,
+p {
+  margin: 0;
+}
+
+#membrete {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:40px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+}
+
+#membrete p,
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partial{
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.editButton{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-color: transparent;
+  top: 10;
+  right: 10;
+  border: none;
+  color: rgb(179, 179, 179);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.editButton:hover {
+  background-color: #e6e9ed;
+  color: #555555;
+  transition: 0.3s;
+}
+
+.friends-item{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.friends-item button{
+  max-width: 90px;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.friends-body{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.friends-body img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.friends-name{
+  font-size: 14px;
+}
+
+.friends-location{
+  font-style: italic;
+  font-size: 12px;
+  color: #555555;
+}
+
+.card-footer{
+  background-color: white!important;
+  color: #555555;
+}
+
+.footer-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items:flex-end;
+  justify-content: space-between;
+}
+
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  margin-top: 0;
+}
+
+.footer-item form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.footer-item button{
+  max-width: 100px;
+}
+
+.footer-list{
+  list-style: none;
+}
+
+.footer-list-item{
+  padding-top:5px;
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+
+  .random-body {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    background: transparent;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-form{
+    display: none;
+  }
+}
